@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@color/background_color"
+    tools:context=".Activities.Success">
+
+    <cdflynn.android.library.checkview.CheckView
+        android:id="@+id/checkMarker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        app:checkView_strokeColor="@color/green"
+        app:checkView_strokeWidth="@dimen/check_stroke_width" />
+
+    <TextView
+        android:id="@+id/textSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkMarker"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:text="PAYMENT DONE!"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/markLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/textSuccess"
+        android:background="@color/button_selectorcolor" />
+
+    <TextView
+        android:id="@+id/payedAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/markLine"
+        android:layout_centerInParent="true"
+        android:paddingBottom="0dp"
+        android:text="Default"
+        android:textColor="@color/textGreen"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/merchantTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payedAmount"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="to Dominican University Ib."
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/merchantTag"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/printAgain"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn_left_with_bg"
+            android:drawableStart="@drawable/ic_print_black_24dp"
+            android:padding="10dp"
+            android:text="Print"
+            android:textColor="#555"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn_right_with_bg"
+            android:drawableStart="@drawable/ic_check_black_24dp"
+            android:drawablePadding="20dp"
+            android:gravity="start|center_vertical"
+            android:padding="10dp"
+            android:text="Done"
+
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

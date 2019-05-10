@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainMenuBoard"
+    tools:showIn="@layout/app_bar_main_menu_board">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_color"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:textColor="@color/white"
+            android:text="Availabe Actions"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/paynow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/connect_button"
+            android:drawableStart="@drawable/ic_credit_card_b"
+            android:drawableEnd="@drawable/ic_add_light_24dp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="PAY NOW"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/message_button"
+            android:drawableStart="@drawable/ic_compare_arrows_black_24dp"
+            android:drawableEnd="@drawable/ic_add_light_24dp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="VIRTUAL TRANSFER"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/qrcodeScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/message_button"
+            android:drawableStart="@drawable/ic_qr_code_light"
+            android:drawableEnd="@drawable/ic_add_light_24dp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="SCAN Qr IMAGE"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/createAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/connect_button"
+            android:drawableStart="@drawable/ic_account_light"
+            android:drawableEnd="@drawable/ic_add_light_24dp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="CREATE ACCOUNT"
+            android:textColor="@color/white"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/checkBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/connect_button"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_new_email_outline_light"
+            android:drawableEnd="@drawable/ic_add_light_24dp"
+            android:drawablePadding="20dp"
+            android:padding="20dp"
+            android:text="CHECK BALANCE"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+
+</RelativeLayout>

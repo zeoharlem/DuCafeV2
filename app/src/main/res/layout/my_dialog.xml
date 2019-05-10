@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerDialog"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Pay"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/amountToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="10dp"
+            android:text="Amount(N)"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/headerDialog"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<TextView-->
+            <!--android:id="@+id/amountToPay"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:text="Amount(N)"-->
+            <!--android:textColor="#222"-->
+            <!--android:textSize="25sp" />-->
+
+        <TextView
+            android:id="@+id/payer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Payer"
+            android:textColor="#222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/p_email"
+            android:layout_marginTop="-15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Email Address"
+            android:textColor="#222"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/passwordDialogBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Payer's Secret Pin"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelPswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/message_button"
+                android:drawablePadding="20dp"
+                android:padding="15dp"
+                android:text="Cancel"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/submitPswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/connect_button"
+                android:padding="15dp"
+                android:layout_marginStart="10dp"
+                android:textColor="#fff"
+                android:text="Accept"
+
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

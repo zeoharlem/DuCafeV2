@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/imageV1"
+        android:layout_width="165dp"
+        android:layout_height="275dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/slider_logo" />
+
+    <TextView
+        android:id="@+id/moremiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageV1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textGreen"
+        android:text="DuCafePayV2 Wallet"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todaysWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moremiTitle"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:text="With Better Interface and faster Rendering" />
+
+</RelativeLayout>

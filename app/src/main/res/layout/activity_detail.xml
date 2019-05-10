@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_scrollFlags="scroll|enterAlways"
+    tools:context=".Activities.DetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:layout_collapseMode="parallax">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageCircleView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/avatar_m"
+                    app:civ_border_color="#CCCCCC"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/cashDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageCircleView"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cashAvailableTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash Available: "
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/actualAmtAvailableTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="N200,000"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cashDetails"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="Client Name"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/withdrawBtn"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fullname"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/rounded_no_bg_border"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Pay To | Top Cash"
+                    android:textColor="#fff" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/creditCard"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="bottom|end"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_credit_card_b" />
+
+                <ImageView
+                    android:id="@+id/sendMsg"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="bottom|end"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_new_email_outline_light" />
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+    <!--android:id="@+id/scroll"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:clipToPadding="false"-->
+    <!--android:padding="20dp"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="One of the most amazing things about Design Support Library is that we can create lively animated UIs with some simple configuration in XML. No code nor deep control about scrolls is required, so the process becomes really easy.&ndash;&gt;-->
+    <!--&lt;!&ndash;ne of the most amazing things about Design Support Library is that we can create lively animated UIs with some simple configuration in XML. No code nor deep control about scrolls is required, so the process becomes really easy.&ndash;&gt;-->
+    <!--&lt;!&ndash;ne of the most amazing things about Design Support Library is that we can create lively animated UIs with some simple configuration in XML. No code nor deep control about scrolls is required, so the process becomes really easy.&ndash;&gt;-->
+    <!--&lt;!&ndash;ne of the most amazing things about Design Support Library is that we can create lively animated UIs with some simple configuration in XML. No code nor deep control about scrolls is required, so the process becomes really easy.&ndash;&gt;-->
+    <!--&lt;!&ndash;ne of the most amazing things about Design Support Library is that we can create lively animated UIs with some simple configuration in XML. No code nor deep control about scrolls is required, so the process becomes really easy." />&ndash;&gt;-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/scrollRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>

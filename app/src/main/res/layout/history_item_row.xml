@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="3dp"
+                android:maxLength="29"
+                android:text="Register Member"
+                android:textColor="@color/textGreen"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/dateHistoryTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textReceiver"
+                android:layout_marginTop="0dp"
+                android:text="Date of Transaction"
+                android:textColor="#aaa"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/amountPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="N0"
+                android:textColor="@color/grey"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/purposeTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amountPaid"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-2dp"
+                android:text="Purpose"
+                android:textColor="#aaa"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
